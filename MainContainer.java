@@ -25,8 +25,8 @@ public class MainContainer {
 		int learning_window = 100;
 		int validation_window = 300;
 		
-		String readDir = "/home/mustafa/Spring2016/Research/AvishaiPCAP_analysis/Results/Channels/Significantone/";
-		String writeDir = "/home/mustafa/Spring2016/Research/AvishaiPCAP_analysis/Results/Channels/StatsOfSignificant/";
+		String readDir = "readDir";
+		String writeDir = "writeDir";
 		
 		/*File rDirFiles = new File(readDir);
 		
@@ -36,7 +36,7 @@ public class MainContainer {
 			}
 		}*/
 		
-		String fn = "/home/mustafa/Spring2016/Research/AvishaiPCAP_analysis/Results/Channels/Significantone/132.66.174.77._132.66.94.249._1.txt";
+		String fn = "input.txt";
 		
 		String fnw = "rest.txt";
 		String model = "1386012, 03024,  13126045, 03090, 1399923, 03046, 119981, 010123, 13106116, 030232, 1327011, 03022, 1345052, 030104, 13606114, 030228";
@@ -94,12 +94,7 @@ public class MainContainer {
 			evaluateWithModel(sr,skpsize,fn,fnw);
 		}
 		
-		
-				///"132566, 03012";
-		//132.66.174.77._132.66.60.83._0.txt --->"1310025, 03050, 1360014, 03028, 115591, 0101";
-		//132.66.174.77._132.66.94.249._1.txt --->"1386012, 03024, 1399923, 03046, 13126045, 03090, 119981, 010123, 13106116, 030232, 1327011, 03022, 1345052, 030104, 13606114, 030228";
-		//132.66.174.77._132.66.160.232._0.txt --->  "136005,03010,119551,01069,1310040,03080" 
-		
+				
 		/*ArrayList<String> sr = new ArrayList<String>();
 		String[] symbs = model.split(",");
 		for(String s:symbs){
@@ -120,7 +115,7 @@ public class MainContainer {
 		ev.initialize();
 		String symbol;
 		String[] flds;
-		//System.out.println("Hi");
+		
 		Scanner sc = new Scanner(new File(fn));
 		while(sc.hasNextLine()){
 			sc.nextLine();
